@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Make Memecoins Great Again</title>
+  <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      background: 
+        radial-gradient(circle at 60% 40%, #ff7a1a 0%, #ff3c00 30%, #1a2340 100%),
+        conic-gradient(from 200deg at 60% 40%, #ff7a1a 0deg 90deg, #1a2340 90deg 270deg, #ff7a1a 270deg 360deg);
+      color: #fff;
+      font-family: 'Segoe UI', 'Arial', sans-serif;
+      text-align: center;
+    }
+    .logo {
+      width: 480px;
+      max-width: 98vw;
+      animation: zoomIn 1.2s cubic-bezier(0.23, 1.02, 0.32, 1) forwards;
+      transform: scale(0.3);
+      opacity: 0;
+      border-radius: 50%;
+      object-fit: cover;
+      aspect-ratio: 1 / 1;
+      box-shadow: 0 4px 32px #1a234088;
+      transition: transform 0.18s cubic-bezier(.4,2,.6,1), box-shadow 0.18s;
+      cursor: pointer;
+    }
+    .logo:hover {
+      transform: scale(1.07) !important;
+      box-shadow: 0 8px 48px #00bfff88, 0 0 0 8px #00ff9944;
+    }
+    @keyframes zoomIn {
+      0% {
+        transform: scale(0.3);
+        opacity: 0;
+      }
+      60% {
+        transform: scale(1.25);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body style="margin:0;padding:0;">
+  <nav class="top-nav">
+    <a href="#about" class="nav-link" id="aboutLink">ABOUT</a>
+    <a href="#" class="nav-link">Faq</a>
+    <a href="#join-section" class="nav-link" id="joinLink">JOIN US</a>
+    <a href="#gpt-images" class="nav-link" id="mmgaLink">$MMGA</a>
+    <a href="#ask-us-section" class="nav-link" id="askUsLink">ASK US</a>
+  </nav>
+  <div style="padding:0;margin:0;">
+    <div class="arcade-text big" style="margin:72px 0 0 0;">WELCOME TO $MMGA</div>
+    <img src="MMGALOGO.png" alt="MMGA Logo" class="logo" style="display:block;margin:36px auto 0 auto;" />
+    <div id="about"></div>
+    <div class="about-boxes">
+      <div class="about-box" id="aboutBox1">
+        <span class="about-emoji">🧢</span>
+        <div class="about-title">About $MMGA</div>
+        <div class="about-text">$MMGA (Make Memecoins Great Again) is more than a token —<br>it’s a movement built by the community, for the community.<br>No dev lords. No VCs. No corporate nonsense. Just us — the degens, the memers, and the true believers in the power of internet culture.<br><br>We’re here to take memecoins back to their roots:<br>fun, wild, unfiltered, and community-powered.</div>
+      </div>
+      <div class="about-box" id="aboutBox2">
+        <span class="about-emoji">👥</span>
+        <div class="about-title">Community First, Always</div>
+        <div class="about-text">
+          $MMGA isn’t run by a team — it’s driven by a tribe.<br>
+          Every meme, every raid, every tweet storm — all fueled by YOU.<br>
+          From meme creators to chart watchers, everyone plays a part.<br><br>
+          💬 Community votes drive decisions<br>
+          🎨 Memes, art, and content by the holders<br>
+          🤝 Open, transparent, and decentralized<br>
+          🧠 Collective creativity over corporate planning.
+        </div>
+      </div>
+      <div class="about-box" id="aboutBox3">
+        <span class="about-emoji">🧠</span>
+        <div class="about-title">Our Mission:</div>
+        <div class="about-text">To Make Memecoins Great Again<br>— together, one legendary meme at a time.</div>
+      </div>
+    </div>
+    <div style="height: 120px;"></div>
+    <div id="faq-section"></div>
+    <div class="faq-container">
+      <div class="faq-box">
+        <div class="faq-question-row">
+          <div class="faq-question">What is $MMGA?</div>
+          <button class="faq-toggle" aria-label="Show answer">
+            <svg class="chevron" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#00bfff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 11 14 16 9"/></svg>
+          </button>
+        </div>
+        <div class="faq-answer" style="display:none;">$MMGA stands for “Make Memecoins Great Again.” It’s not just a token — it’s a movement to bring chaos, fun, and pure meme energy back into crypto. No VC suits, no boring whitepapers. Just vibes.</div>
+      </div>
+      <div class="faq-box">
+        <div class="faq-question-row">
+          <div class="faq-question">Where can I buy $MMGA?</div>
+          <button class="faq-toggle" aria-label="Show answer">
+            <svg class="chevron" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#00bfff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 11 14 16 9"/></svg>
+          </button>
+        </div>
+        <div class="faq-answer" style="display:none;">You can buy $MMGA on supported decentralized exchanges (DEXs). Just copy the contract address down below and import it into your DEX of choice. Always verify the contract address!</div>
+      </div>
+      <div class="faq-box">
+        <div class="faq-question-row">
+          <div class="faq-question">How can I contribute to $MMGA?</div>
+          <button class="faq-toggle" aria-label="Show answer">
+            <svg class="chevron" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#00bfff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 11 14 16 9"/></svg>
+          </button>
+        </div>
+        <div class="faq-answer" style="display:none;">
+          Make memes<br>
+          Create content<br>
+          Help the community grow
+        </div>
+      </div>
+    </div>
+    <div class="coin-bar" id="coinBar">
+      <span><span class="arcade-text">Coin Address:</span> <b id="coinAddress">N2TY9Vy5hZs9rYJ1cTC5AYoeH7YsAFGk9PXbmTPbonk</b></span>
+      <button class="copy-btn" id="copyBtn" title="Copy Address">Copy</button>
+    </div>
+    <div id="join-section"></div>
+    <div class="join-community">
+      <div class="arcade-text big">JOIN OUR X COMMUNITY</div>
+      <div class="arrows">⬇ ⬇ ⬇</div>
+      <a href="https://x.com/i/communities/1947346363240616083" target="_blank" rel="noopener noreferrer">
+        <img src="xlogo.png" alt="X Logo" class="x-logo" />
+      </a>
+    </div>
+    <div class="gpt-images-section" id="gpt-images">
+      <div class="gpt-images-container">
+        <img src="GPT1.png" alt="GPT Image 1" class="gpt-image" onclick="openModal(this.src)" />
+        <img src="GPT2.png" alt="GPT Image 2" class="gpt-image" onclick="openModal(this.src)" />
+        <img src="GPT3.png" alt="GPT Image 3" class="gpt-image" onclick="openModal(this.src)" />
+        <img src="GPT4.png" alt="GPT Image 4" class="gpt-image" onclick="openModal(this.src)" />
+        <img src="GPT5.png" alt="GPT Image 5" class="gpt-image" onclick="openModal(this.src)" />
+        <img src="GPT6.png" alt="GPT Image 6" class="gpt-image" onclick="openModal(this.src)" />
+        <img src="GPT7.png" alt="GPT Image 7" class="gpt-image" onclick="openModal(this.src)" />
+        <img src="GPT8.png" alt="GPT Image 8" class="gpt-image" onclick="openModal(this.src)" />
+        <img src="GPT9.png" alt="GPT Image 9" class="gpt-image" onclick="openModal(this.src)" />
+        <img src="GPT10.png" alt="GPT Image 10" class="gpt-image" onclick="openModal(this.src)" />
+        <img src="GPT11.png" alt="GPT Image 11" class="gpt-image" onclick="openModal(this.src)" />
+        <img src="GPT12.png" alt="GPT Image 12" class="gpt-image" onclick="openModal(this.src)" />
+      </div>
+      <div class="ask-us-text">
+        <div id="ask-us-section"></div>
+        YOU CAN ASK US ON OUR X ACCOUNT VIA DM AND WE WILL BE HAPPY TO RESPOND TO ALL OF YOUR QUESTIONS
+      </div>
+      <div class="x-handle">
+        <a href="https://x.com/MakeMemeCGreat" target="_blank" rel="noopener noreferrer">
+          @MakeMemeCGreat on X, or just click on it
+        </a>
+      </div>
+    </div>
+    <div style="height: 60vh;"></div>
+    <!-- Modal for full-size image -->
+    <div id="imageModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage">
+    </div>
+  </div>
+  <script>
+    // Show the coin bar when user scrolls to the FAQ section
+    const coinBar = document.getElementById('coinBar');
+    const copyBtn = document.getElementById('copyBtn');
+    const coinAddress = document.getElementById('coinAddress');
+    window.addEventListener('scroll', () => {
+      const faqSection = document.getElementById('faq-section');
+      const faqRect = faqSection.getBoundingClientRect();
+      if (faqRect.top < window.innerHeight * 0.8) {
+        coinBar.classList.add('show');
+      } else {
+        coinBar.classList.remove('show');
+      }
+    });
+    // Intersection Observer to hide copy button when coin bar is not visible
+    const observer = new window.IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            copyBtn.classList.remove('hide');
+          } else {
+            copyBtn.classList.add('hide');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+    observer.observe(coinBar);
+    // Copy button logic
+    copyBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText(coinAddress.textContent);
+      copyBtn.classList.add('copied');
+      setTimeout(() => copyBtn.classList.remove('copied'), 1200);
+    });
+    // Smooth scroll for ABOUT link
+    document.getElementById('aboutLink').addEventListener('click', function(e) {
+      e.preventDefault();
+      const about = document.getElementById('about');
+      const nav = document.querySelector('.top-nav');
+      const y = about.getBoundingClientRect().top + window.scrollY - nav.offsetHeight;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    });
+    // Intersection Observer for about boxes
+    [1,2,3].forEach(i => {
+      const box = document.getElementById(`aboutBox${i}`);
+      if (!box) return;
+      const observer = new window.IntersectionObserver(
+        (entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              box.classList.remove('hide');
+            } else {
+              box.classList.add('hide');
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+      observer.observe(box);
+    });
+    // Smooth scroll for FAQ link
+    document.querySelectorAll('.nav-link').forEach(link => {
+      if (link.textContent.trim().toUpperCase() === 'FAQ') {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const faq = document.getElementById('faq-section');
+          const nav = document.querySelector('.top-nav');
+          const y = faq.getBoundingClientRect().top + window.scrollY - nav.offsetHeight;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        });
+      }
+    });
+    // Smooth scroll for JOIN US link
+    document.getElementById('joinLink').addEventListener('click', function(e) {
+      e.preventDefault();
+      const coinBar = document.getElementById('coinBar');
+      const nav = document.querySelector('.top-nav');
+      const y = coinBar.getBoundingClientRect().top + window.scrollY - nav.offsetHeight - 100;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+      // Show the coin bar when scrolling to it
+      setTimeout(() => {
+        coinBar.classList.add('show');
+      }, 500);
+    });
+    // Smooth scroll for $MMGA link
+    document.getElementById('mmgaLink').addEventListener('click', function(e) {
+      e.preventDefault();
+      const gptSection = document.getElementById('gpt-images');
+      const nav = document.querySelector('.top-nav');
+      const y = gptSection.getBoundingClientRect().top + window.scrollY - nav.offsetHeight - 40;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    });
+    // Smooth scroll for ASK US link
+    document.getElementById('askUsLink').addEventListener('click', function(e) {
+      e.preventDefault();
+      const askUsSection = document.getElementById('ask-us-section');
+      const nav = document.querySelector('.top-nav');
+      const y = askUsSection.getBoundingClientRect().top + window.scrollY - nav.offsetHeight - 40;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    });
+    // FAQ toggle logic
+    document.querySelectorAll('.faq-box').forEach(box => {
+      const toggle = box.querySelector('.faq-toggle');
+      const questionRow = box.querySelector('.faq-question-row');
+      const answer = box.querySelector('.faq-answer');
+      if (toggle && answer && questionRow) {
+        questionRow.addEventListener('click', () => {
+          const isOpen = answer.style.display !== 'none';
+          answer.style.display = isOpen ? 'none' : 'block';
+          if (!isOpen) {
+            toggle.classList.add('open');
+          } else {
+            toggle.classList.remove('open');
+          }
+        });
+      }
+    });
+    // Modal functionality
+    function openModal(imgSrc) {
+      const modal = document.getElementById('imageModal');
+      const modalImg = document.getElementById('modalImage');
+      modal.style.display = 'block';
+      modalImg.src = imgSrc;
+    }
+    // Close modal when clicking X or outside the image
+    document.querySelector('.close').addEventListener('click', function() {
+      document.getElementById('imageModal').style.display = 'none';
+    });
+    document.getElementById('imageModal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        this.style.display = 'none';
+      }
+    });
+  </script>
+  <style>
+    .coin-bar {
+      margin: 200px auto 32px auto;
+      opacity: 0;
+      transform: scale(0.3);
+      transition: opacity 0.3s, transform 0.3s;
+      max-width: 600px;
+      pointer-events: none;
+      background: linear-gradient(90deg, #00ff99 0%, #00bfff 60%, #ff7a1a 100%);
+      color: #fff;
+      padding: 24px 32px 20px 32px;
+      border-radius: 18px;
+      font-size: 1.2rem;
+      font-family: inherit;
+      box-shadow: 0 8px 32px #1a2340cc, 0 0 0 4px #00bfff44;
+      border: 2px solid #00bfff;
+      z-index: 100;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 18px;
+      justify-content: center;
+      min-width: 320px;
+      flex-wrap: wrap;
+    }
+    .coin-bar.show {
+      opacity: 1;
+      transform: scale(1.15);
+      pointer-events: auto;
+    }
+    .coin-bar.show:hover {
+      transform: scale(1.04);
+      box-shadow: 0 12px 48px #00bfff88, 0 0 0 8px #00ff9944;
+    }
+    .coin-bar span b {
+      color: #fff;
+      background: linear-gradient(90deg, #ffb300 0%, #00ff99 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      font-size: 1.05em;
+      letter-spacing: 1px;
+      font-family: 'Press Start 2P', 'Consolas', 'monospace';
+      font-weight: bold;
+      user-select: all;
+      word-break: break-all;
+      max-width: 100%;
+    }
+    .copy-btn {
+      background: linear-gradient(90deg, #ffb300 0%, #00bfff 100%);
+      color: #101c3a;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 22px;
+      font-size: 1.1rem;
+      font-family: 'Press Start 2P', 'Consolas', 'monospace';
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 2px 8px #00bfff88;
+      transition: transform 0.15s, box-shadow 0.15s, background 0.2s;
+      outline: none;
+      margin-left: 8px;
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+      transition: box-shadow 0.18s, transform 0.18s;
+    }
+    .copy-btn:hover {
+      transform: scale(1.08) rotate(-2deg);
+      background: linear-gradient(90deg, #00ff99 0%, #ffb300 100%);
+      box-shadow: 0 4px 16px #ffb30088, 0 0 0 8px #00ff9944;
+    }
+    .copy-btn.copied::after {
+      content: 'Copied!';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      background: #00bfff;
+      padding: 4px 12px;
+      border-radius: 8px;
+      font-size: 0.95em;
+      font-family: inherit;
+      pointer-events: none;
+      opacity: 0.95;
+      z-index: 2;
+      animation: popFade 1s forwards;
+    }
+    @keyframes popFade {
+      0% { opacity: 0; transform: translate(-50%, -60%) scale(0.7); }
+      30% { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+      100% { opacity: 0; transform: translate(-50%, -40%) scale(0.9); }
+    }
+    .arcade-text {
+      font-family: 'Press Start 2P', 'Consolas', 'monospace';
+      font-size: 1.3rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #00ffea 0%, #00ff99 40%, #00bfff 80%, #fff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      margin-bottom: 8px;
+      text-shadow: 0 4px 24px #00fff7cc, 0 2px 8px #00ff99cc, 0 1px 0 #fff;
+      text-align: center;
+      font-weight: 900;
+      filter: brightness(1.2) drop-shadow(0 2px 0 #00bfff88);
+    }
+    .arcade-text.big {
+      font-size: 3.5rem;
+      margin-top: 0;
+      margin-bottom: 0;
+      line-height: 1.1;
+      font-weight: 900;
+    }
+    .center-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .floating-copy-btn {
+      position: fixed;
+      right: 32px;
+      bottom: 32px;
+      z-index: 200;
+      box-shadow: 0 4px 24px #00bfff88, 0 0 0 4px #ffb30044;
+      padding: 16px 32px;
+      font-size: 1.3rem;
+      border-radius: 16px;
+      opacity: 0.95;
+      transition: opacity 0.2s, transform 0.2s;
+      display: block;
+      pointer-events: auto;
+    }
+    .floating-copy-btn.hide {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+    }
+    .top-nav {
+      width: 100vw;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      background: linear-gradient(90deg, #00bfff 0%, #00ff99 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 48px;
+      padding: 0 0 0 0;
+      height: 56px;
+      box-shadow: 0 2px 16px #1a234044;
+    }
+    .nav-link {
+      color: #fff;
+      font-family: 'Press Start 2P', 'Consolas', 'monospace';
+      font-size: 1.1rem;
+      text-decoration: none;
+      letter-spacing: 1px;
+      padding: 0 12px;
+      transition: color 0.2s, text-shadow 0.2s;
+      text-shadow: 0 2px 8px #003a3a88, 0 1px 0 #fff2;
+      position: relative;
+    }
+    .nav-link:hover {
+      color: #ffb300;
+      text-shadow: 0 2px 16px #ffb30088, 0 1px 0 #fff2;
+    }
+    .about-boxes {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: stretch;
+      gap: 32px;
+      margin: 96px auto 0 auto;
+      max-width: 1400px;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    .about-box {
+      background: linear-gradient(120deg, #101c3a 60%, #00bfff 120%);
+      color: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 24px #1a234088;
+      padding: 32px 28px 28px 28px;
+      width: 100%;
+      max-width: 400px;
+      flex: 1 1 320px;
+      min-height: 120px;
+      font-family: 'Segoe UI', 'Arial', sans-serif;
+      font-size: 1.15rem;
+      opacity: 1;
+      transition: opacity 0.3s;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      transition: box-shadow 0.18s, transform 0.18s;
+      cursor: pointer;
+    }
+    .about-box.hide {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+    }
+    .about-box:hover {
+      transform: scale(1.04);
+      box-shadow: 0 8px 48px #00bfff88, 0 0 0 8px #00ff9944;
+    }
+    .about-emoji {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+    .about-title {
+      font-family: 'Press Start 2P', 'Consolas', 'monospace';
+      font-size: 1.3rem;
+      background: linear-gradient(90deg, #00ff99 0%, #00bfff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .about-text {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #fff;
+    }
+    .faq-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 120px auto 0 auto;
+      max-width: 900px;
+      width: 100%;
+      gap: 32px;
+    }
+    .faq-box {
+      background: linear-gradient(120deg, #101c3a 60%, #00bfff 120%);
+      color: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 24px #1a234088;
+      padding: 32px 28px 28px 28px;
+      width: 100%;
+      max-width: 700px;
+      font-family: 'Segoe UI', 'Arial', sans-serif;
+      font-size: 1.15rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      transition: box-shadow 0.18s, transform 0.18s;
+    }
+    .faq-box:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 48px #00bfff88, 0 0 0 8px #00ff9944;
+    }
+    .faq-question-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      gap: 0;
+      cursor: pointer;
+    }
+    .faq-question {
+      font-family: 'Press Start 2P', 'Consolas', 'monospace';
+      font-size: 1.1rem;
+      background: linear-gradient(90deg, #00ff99 0%, #00bfff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      font-weight: bold;
+      margin-bottom: 8px;
+      text-align: left;
+      flex: 1 1 auto;
+      padding-right: 12px;
+    }
+    .faq-toggle {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.3em;
+      cursor: pointer;
+      transition: transform 0.2s;
+      margin-left: 8px;
+      outline: none;
+      user-select: none;
+      padding: 0 8px;
+      display: flex;
+      align-items: center;
+    }
+    .chevron {
+      display: block;
+      transition: transform 0.2s;
+    }
+    .faq-toggle.open {
+      /* rotate the chevron svg */
+      /* target the svg inside the button */
+    }
+    .faq-toggle.open .chevron {
+      transform: rotate(90deg);
+    }
+    .faq-toggle .chevron {
+      transform: rotate(0deg);
+      transition: transform 0.25s cubic-bezier(.4,2,.6,1);
+    }
+    .faq-answer {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: #fff;
+      margin-top: 8px;
+      padding-left: 2px;
+      border-left: 3px solid #00bfff33;
+      transition: opacity 0.2s;
+    }
+    .join-community {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 48px auto 0 auto;
+      max-width: 600px;
+      width: 100%;
+      gap: 16px;
+    }
+    .arrows {
+      font-size: 2.5rem;
+      color: #00bfff;
+      text-align: center;
+      animation: bounce 1.5s infinite;
+    }
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-10px);
+      }
+      60% {
+        transform: translateY(-5px);
+      }
+    }
+    .x-logo {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-top: 16px;
+      transition: transform 0.18s;
+      cursor: pointer;
+    }
+    .x-logo:hover {
+      transform: scale(1.1);
+    }
+    .gpt-images-section {
+      margin: 240px auto 0 auto;
+      max-width: 1200px;
+      width: 100%;
+      padding: 0 20px;
+    }
+    .gpt-images-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      width: 100%;
+    }
+    .gpt-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px #1a234088;
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+    }
+    .gpt-image:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 32px #00bfff88;
+    }
+    @media (max-width: 768px) {
+      .gpt-images-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+      .gpt-image {
+        height: 150px;
+      }
+    }
+    .ask-us-text {
+      font-family: 'Press Start 2P', 'Consolas', 'monospace';
+      font-size: 2.2rem;
+      background: linear-gradient(90deg, #00ff99 0%, #00bfff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      font-weight: bold;
+      text-align: center;
+      letter-spacing: 1px;
+      margin-top: 480px;
+      line-height: 1.4;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .x-handle {
+      font-family: 'Press Start 2P', 'Consolas', 'monospace';
+      font-size: 2rem;
+      background: linear-gradient(90deg, #ffb300 0%, #00ff99 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      font-weight: bold;
+      text-align: center;
+      letter-spacing: 1px;
+      margin-top: 32px;
+      line-height: 1.4;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .x-handle a {
+      text-decoration: none;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 2000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      backdrop-filter: blur(5px);
+    }
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 90%;
+      max-height: 90%;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 8px 32px #00bfff88;
+    }
+    .close {
+      color: #fff;
+      float: right;
+      font-size: 35px;
+      font-weight: bold;
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      cursor: pointer;
+      z-index: 2001;
+      text-shadow: 0 2px 8px #000;
+    }
+    .close:hover {
+      color: #00bfff;
+    }
+  </style>
+</body>
+</html> 
